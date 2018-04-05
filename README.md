@@ -1,4 +1,4 @@
-# Dev Setting For WebApp Using React.js, Express.js, Material-UI
+# Dev Setting For WebApp
 
 ## How to Use
 
