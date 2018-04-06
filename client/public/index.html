@@ -10,6 +10,7 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="devices/devices.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -20,12 +21,60 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style type="text/css">
+      @media screen and (min-width: 435px){
+        #iphone{
+          padding-top: 200px;
+          background-image: url(images/iphone.png);
+          background-repeat: no-repeat;
+          background-size: 102%;
+          background-position-y: 14px;
+          background-position-x: -8px;
+          height: 1000px;
+          width: 1030px;
+        }
+        #background{
+          background: #A1A2A2;
+          padding-top: 100px;
+          height: 3000px;
+        }
+        #root{
+          background:#FFF;
+          width: 375px;
+          height: 667px;
+          margin: auto;
+          overflow: scroll;
+          border:1px solid #cecece;
+        }
+        .BtnNav{
+          position: absolute !important;
+          width: 375px;
+          top: 714px;
+          box-shadow: none !important;
+          border-bottom:1px solid #cecece;
+          border-left:1px solid #cecece;
+          border-right:1px solid #cecece;
+          margin-left: -1px;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+    <div id="background">
+      <div class="device device-iphone-8">
+        <div class="device-frame">
+          <div id="root"></div>
+        </div>
+        <div class="device-stripe"></div>
+        <div class="device-header"></div>
+        <div class="device-sensors"></div>
+        <div class="device-btns"></div>
+        <div class="device-power"></div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
