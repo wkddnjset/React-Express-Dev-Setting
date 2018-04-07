@@ -21,8 +21,8 @@ class Examples extends Component {
         <p>Start Your WebApp Project More Easier</p>
         <ul>
         	{this.state.examples.map(example => 
-        		<li key={example.id}>
-                <img className="image" src={example.img}/>
+        		<li>
+                <img className="image" src={example.img} alt="{example.id}"/>
         		</li>
         	)}
         </ul>
