@@ -5,7 +5,7 @@ var db_user = 'root';
 var db_pw = 'new-password';
 var db_host = '127.0.0.1';
 // var db_host = 'tndn.ci6p4htbv8yf.ap-northeast-1.rds.amazonaws.com';
-var db_database = 'tndn_database';
+var db_database = 'database_name';
 
 var config = {
   host: db_host,
