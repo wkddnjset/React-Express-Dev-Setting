@@ -55,7 +55,7 @@ class BottomNavigationBar extends Component {
           <BottomNavigationItem
             label="Profile"
             icon={personIcon}
-            onClick={(event) => { this.select(3); this.props.history.push("/profile");}}
+            onClick={(event) => { this.select(2); this.props.history.push("/profile");}}
           />
         </BottomNavigation>
       </Paper>
